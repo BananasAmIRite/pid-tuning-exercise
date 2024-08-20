@@ -3,7 +3,7 @@
         "target": "es2015",
         "module": "commonjs",
         "lib": ["dom"],
-        "outDir": "./dist",
+        "outDir": "./public/dist",
         "strict": true,
         "moduleResolution": "node",
         "esModuleInterop": true,

@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "npx tsc --project tsconfig.json && browserify dist/index.js -p esmify > dist/bundle.js"
+        "start": "npx tsc --project tsconfig.json && browserify public/dist/index.js -p esmify > public/dist/bundle.js",
+        "deploy": "gh-pages -d public"
     },
     "keywords": [],
     "author": "",
@@ -20,6 +21,7 @@
         "typescript": "^4.9.4"
     },
     "devDependencies": {
-        "@types/mathjs": "^9.4.2"
+        "@types/mathjs": "^9.4.2",
+        "gh-pages": "^6.1.1"
     }
 }
